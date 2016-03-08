@@ -1,0 +1,24 @@
+{
+  "name": "objecttype",
+  "version": "1.0.0",
+  "description": "Simple package to easily determine the type of an object",
+  "main": "index",
+  "scripts": {
+    "test": "node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richhaigh/objecttype.git"
+  },
+  "keywords": [
+    "object",
+    "type",
+    "typename"
+  ],
+  "author": "Rich Haigh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richhaigh/objecttype/issues"
+  },
+  "homepage": "https://github.com/richhaigh/objecttype#readme"
+}
