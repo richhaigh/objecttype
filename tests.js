@@ -30,3 +30,9 @@ console.log(objecttype.getType(regex));
 if(objecttype.getType(str) == objecttype.string){
 	console.log("It's a string!");
 }
+
+if(objecttype.getType(date) == objecttype.object){
+	console.log('This should not get hit');
+} else {
+	console.log('This is not an object, it is a', objecttype.getType(date));
+}
