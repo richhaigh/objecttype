@@ -1,4 +1,4 @@
-var objecttype = require('./index');
+var getType = require('./index');
 
 var obj = {value: 'Hello world'};
 var str = 'Hello world';
@@ -11,28 +11,32 @@ var bool = true;
 var arr = [1,2,3];
 var regex = /test/;
 
-console.log(objecttype.getType(obj));
+var func2 = new func();
 
-console.log(objecttype.getType(str));
+console.log(getType.getType(obj));
 
-console.log(objecttype.getType(num));
+console.log(getType.getType(str));
 
-console.log(objecttype.getType(date));
+console.log(getType.getType(num));
 
-console.log(objecttype.getType(func));
+console.log(getType.getType(date));
 
-console.log(objecttype.getType(bool));
+console.log(getType.getType(func));
 
-console.log(objecttype.getType(arr));
+console.log(getType.getType(bool));
 
-console.log(objecttype.getType(regex));
+console.log(getType.getType(arr));
 
-if(objecttype.getType(str) == objecttype.string){
+console.log(getType.getType(regex));
+
+if(getType.getType(str) == getType.string){
 	console.log("It's a string!");
 }
 
-if(objecttype.getType(date) == objecttype.object){
+if(getType.getType(date) == getType.object){
 	console.log('This should not get hit');
 } else {
-	console.log('This is not an object, it is a', objecttype.getType(date));
+	console.log('This is not an object, it is a', getType.getType(date));
 }
+
+
