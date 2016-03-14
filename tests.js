@@ -29,6 +29,10 @@ console.log(getType.getType(arr));
 
 console.log(getType.getType(regex));
 
+console.log(getType.getType(undefined));
+
+console.log(getType.getType(null));
+
 if(getType.getType(str) == getType.string){
 	console.log("It's a string!");
 }
