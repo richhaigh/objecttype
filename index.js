@@ -1,1 +1,1 @@
-module.exports = require('./lib/objecttype');
+module.exports = require('./lib/typenames');
