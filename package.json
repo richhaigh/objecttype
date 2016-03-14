@@ -1,5 +1,5 @@
 {
-  "name": "objecttype",
+  "name": "typenames",
   "version": "1.0.0",
   "description": "Simple package to easily determine the type of an object",
   "main": "index",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/richhaigh/objecttype.git"
+    "url": "git+https://github.com/richhaigh/typenames.git"
   },
   "keywords": [
     "object",
@@ -18,7 +18,7 @@
   "author": "Rich Haigh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/richhaigh/objecttype/issues"
+    "url": "https://github.com/richhaigh/typenames/issues"
   },
-  "homepage": "https://github.com/richhaigh/objecttype#readme"
+  "homepage": "https://github.com/richhaigh/typenames#readme"
 }
