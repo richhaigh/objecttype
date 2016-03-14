@@ -13,34 +13,41 @@ var regex = /test/;
 
 var func2 = new func();
 
-console.log(getType.getType(obj));
+// Write the typenames to the console
 
-console.log(getType.getType(str));
+console.log(getType.typeOf(obj)); // object
 
-console.log(getType.getType(num));
+console.log(getType.typeOf(obj.value)); // string
 
-console.log(getType.getType(date));
+console.log(getType.typeOf(str)); // string
 
-console.log(getType.getType(func));
+console.log(getType.typeOf(num)); // number
 
-console.log(getType.getType(bool));
+console.log(getType.typeOf(date)); // date
 
-console.log(getType.getType(arr));
+console.log(getType.typeOf(func)); // function
 
-console.log(getType.getType(regex));
+console.log(getType.typeOf(bool)); // boolean
 
-console.log(getType.getType(undefined));
+console.log(getType.typeOf(arr)); // array
 
-console.log(getType.getType(null));
+console.log(getType.typeOf(regex)); // regular expression
 
-if(getType.getType(str) == getType.string){
+console.log(getType.typeOf(undefined)); // undefined
+
+console.log(getType.typeOf(null)); // null
+
+
+// Simple comparison operations on the returned types
+
+if(getType.typeOf(str) == getType.string){
 	console.log("It's a string!");
 }
 
-if(getType.getType(date) == getType.object){
+if(getType.typeOf(date) == getType.object){
 	console.log('This should not get hit');
 } else {
-	console.log('This is not an object, it is a', getType.getType(date));
+	console.log('This is not an object, it is a', getType.typeOf(date));
 }
 
 
