@@ -13,6 +13,27 @@ Simple node package to determine object types
 	t = typenames.typeOf(new String("foo"));
 	
 
+###Supported Types  
+	
+	typenames.string;
+	typenames.boolean;
+	typenames.bool;
+	typenames.number;
+	typenames.function;
+	typenames.array;
+	typenames.date;
+	typenames.regularExpression;
+	typenames.regexp;
+	typenames.object;
+	typenames.math;
+	typenames.json;
+	typenames.error;
+	typenames.arguments
+	typenames.null;
+	typenames.undefined;
+	
+
+
 ###Comparison Operations
 	var d = new Date();
 	var bool = true;
