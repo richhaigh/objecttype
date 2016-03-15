@@ -50,6 +50,7 @@ console.log(getType.typeOf(new TypeError('typeerror')) ); // typeerror
 
 console.log(getType.typeOf(Math)); // math
 console.log(getType.typeOf(JSON) ); // json
+console.log(getType.typeOf(Symbol()));
 console.log(getType.typeOf((function(){ return arguments; })()));  // arguments
 
 
@@ -64,5 +65,4 @@ if(getType.typeOf(date) == getType.object){
 } else {
 	console.log('This is not an object, it is a', getType.typeOf(date));
 }
-
 

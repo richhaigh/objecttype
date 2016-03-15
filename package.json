@@ -1,6 +1,6 @@
 {
   "name": "typenames",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Simple package to easily determine the type of an object",
   "main": "index",
   "scripts": {
@@ -13,7 +13,9 @@
   "keywords": [
     "object",
     "type",
-    "typename"
+    "typename",
+	"typeof",
+	"gettype"
   ],
   "author": "Rich Haigh",
   "license": "ISC",
