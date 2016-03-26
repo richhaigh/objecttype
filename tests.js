@@ -4,14 +4,12 @@ var obj = {value: 'Hello world'};
 var str = 'Hello world';
 var num = 999;
 var date = new Date();
-var func = function(){
-	console.log('Hello world');
-}
 var bool = true;
 var arr = [1,2,3];
 var regex = /test/;
 
-var func2 = new func();
+function bar(){}
+var myObject = new bar();
 
 // Write the getType.typeOfs to the console
 
@@ -53,6 +51,8 @@ console.log(getType.typeOf(JSON) ); // json
 console.log(getType.typeOf(Symbol()));
 console.log(getType.typeOf((function(){ return arguments; })()));  // arguments
 
+console.log(getType.typeOf(myObject));
+console.log(getType.typeName(myObject));
 
 // Simple comparison operations on the returned types
 

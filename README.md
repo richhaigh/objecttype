@@ -5,15 +5,31 @@ Simple node package to determine object types
 	npm install typenames
 
 ##Usage  
-###Basic Operation
+###Basic Operation  
+####Return the type of the an object  
+
 	var typenames = require('typenames');
 	
 	var t = typenames.typeOf("foo");
 	
 	t = typenames.typeOf(new String("foo"));
+
+
+####Return the type name of an object  
+
+	function bar () {}
+	
+	var myObject = new bar();
+	
+	console.log(typenames.typeOf(myObject)); // Object
+	console.log(typenames.typeName(myObject)); // bar
 	
 
+Custom objects need to implement the constructor pattern in order for the name to be identified.  
+
 ###Supported Types  
+The list below are the default types included.  
+
 	
 	typenames.string;
 	typenames.boolean;
@@ -31,6 +47,9 @@ Simple node package to determine object types
 	typenames.arguments
 	typenames.null;
 	typenames.undefined;
+	typenames.error;
+	typenames.typeError;
+	typenames.symbol;
 	
 
 
@@ -59,4 +78,17 @@ Simple node package to determine object types
 	checkType(bool);
 	checkType('foo');
 
+Custom objects will return a type of *object*. This can be used in conjunction with the *typeName* method to identify the object. An example is shown below.
 
+	function bar () {}
+	
+	var myObject = new bar();
+	
+	if(typenames.typeOf(moObject) == typenames.object){
+		if(typenames.typeName(myObject) == bar.name){
+			// True
+		} else {
+			// Another object	
+		}
+	}
+	
